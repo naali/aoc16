@@ -33,19 +33,9 @@ function valueToBot(value, bot) {
 					bots[bot].high = bots[bot].low;
 					bots[bot].low = value;
 				}
-			} else {
-				if (bots[bot].low !== undefined) {
-					l("how the fuck 1?");
-					debugger;
-				} else {
-					l("how the fuck 2?");
-					debugger;
-				}
 			}
 		}
 	}
-	
-//	l(bots);
 	
 	if (bots[bot].high !== undefined && bots[bot].low !== undefined) {
 		if (bots[bot].high == 61 && bots[bot].low == 17) {	
@@ -68,8 +58,6 @@ function solve(input) {
 			var bot = parseInt(m[3]);
 			
 			valueToBot(value, bot);
-		} else {
-			// not a start value...
 		}
 	}
 	
